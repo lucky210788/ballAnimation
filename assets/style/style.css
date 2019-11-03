@@ -1,0 +1,18 @@
+body {
+    background: #1d1d1d;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background-color: #d2691e;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transition: left 1s ease-out, top 1s ease-out;
+    transition: left 1s ease-out, top 1s ease-out;
+    opacity: .7;
+    cursor: pointer;
+}
