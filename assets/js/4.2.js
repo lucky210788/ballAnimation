@@ -29,7 +29,7 @@ Array.prototype.mySort = function (callback) {
 
 Array.prototype.myForEach = function (callback) {
     for (let i = 0; i < this.length; i++) {
-        callback.call(this, this[i], i, Array);
+        callback(this[i], i, Array);
     }
 };
 
@@ -44,7 +44,7 @@ Array.prototype.myForEach = function (callback) {
 Array.prototype.myMap = function (callback) {
     let newArr = [];
     for (let i = 0; i < this.length; i++) {
-        newArr.push(callback.call(this, this[i], i, Array));
+        newArr.push(callback(this[i], i, Array));
     }
     return newArr;
 };
